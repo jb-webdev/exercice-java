@@ -1,16 +1,13 @@
 public class Exercice4v1
 {
 	public static void main(String[] args) {
-		
-		// Commencer le code ici
-		
-		
-		
-		// Finir le code au dessus
-		// compilez avec : 
-		// javac Exercice4v1.java
-		// Exécutez avec : 
-		// java Exercice4v1
-		
+		int user_number = 15;
+
+		for (int somme = 0; somme < 100 + user_number; somme = somme + user_number){
+
+			System.out.println("Donnez moi un nombre entre 0 et 100 ");
+			System.out.println("somme = " + somme);
+			
+		}
 	}
 }
