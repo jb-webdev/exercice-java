@@ -1,13 +1,23 @@
 public class Exercice4v1
 {
 	public static void main(String[] args) {
-		int user_number = 15;
+		int prixFarine = 2;
+		int nbFarine = 1;
+		int prixTotalFarine = nbFarine * prixFarine;
 
-		for (int somme = 0; somme < 100 + user_number; somme = somme + user_number){
+		int prixSucre = 1;
+		int nbSucre = 3;
+		int prixTotalSucre = nbSucre * prixSucre;
 
-			System.out.println("Donnez moi un nombre entre 0 et 100 ");
-			System.out.println("somme = " + somme);
-			
-		}
+		int prixTotal = prixTotalFarine + prixTotalSucre;
+
+		System.out.println("Le prix total de la farine est de : " + prixTotalFarine);
+		System.out.println("Le prix total du sucre est de : " + prixTotalSucre);
+		System.out.println("Le prix total est de : " + prixTotal);
+
+		
+		// javac Exercice4v1.java
+		// java Exercice4v1
+		
 	}
 }

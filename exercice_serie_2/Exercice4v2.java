@@ -2,32 +2,18 @@ public class Exercice4v2
 {
 	public static void main(String[] args) {
 
-		// je cree un tableau pour simuler les nombre donné par l'utilisateur
-		int [] arrayUser = {10, 4, 3, 0, 10, 8, 25, 7, 38, 78, 209};
+		int prixFarine = 2;
+		int nbFarine = 1;
+		int prixTotalFarine = nbFarine * prixFarine;
+		System.out.println("Le prix total de la farine est de : " + prixTotalFarine);
 
-		// je cree une variable pour stocker ma moyenne pour la fin
-		int resultat = 0;
+		int prixSucre = 1;
+		int nbSucre = 3;
+		int prixTotalSucre = nbSucre * prixSucre;
+		System.out.println("Le prix total du sucre est de : " + prixTotalSucre);
 
-		// Je cree une variable pour compter les nombre superieur a 0
-		int compteurNombreSuperieurAZero = 0;
-		
-		// je cree une compteurNombreSuperieurAZero for pour pour recuperer les valeur dans mon tableau
-		for (int userNumber : arrayUser){
-			
-			System.out.println("Donnez moi un nombre superieur a zero ?");
-			System.out.println("Votre nombre est " + userNumber);
-			
-			if (userNumber < 1 ){
-				System.out.println("Votre nombre n'est pas bon !");
-			} else {
-				System.out.println("Super ! je note !");
-				resultat = resultat + userNumber;
-				compteurNombreSuperieurAZero ++;
-			}
-		}
-		System.out.println("la moyenne des nombres est de : " + (resultat / compteurNombreSuperieurAZero));
-		System.out.println("valeur compteur nombre superieur a zero :" + compteurNombreSuperieurAZero);
-		System.out.println("sommme des nombres de l'utilisateur :" + resultat);
+		int prixTotal = prixTotalFarine + prixTotalSucre;
+		System.out.println("Le prix total est de : " + prixTotal);
 		
 		// javac Exercice4v2.java
 		// java Exercice4v2
